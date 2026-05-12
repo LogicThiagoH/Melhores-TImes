@@ -1,0 +1,149 @@
+body {
+    background: url("imagens/estadio.avif") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+}
+h1 {
+    text-decoration: underline;
+    
+}
+h2 {
+    text-decoration: underline;
+    
+}
+.conteudo-lista li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.conteudo-lista img {
+    width: 60px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.conteudo-principal,
+.conteudo-lista,
+.meu-time {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 85%;
+}
+
+.conteudo-lista li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+p {
+    line-height: 1.5;
+}
+.conteudo-lista ol {
+    padding-left: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.conteudo-principal,
+.conteudo-lista,
+.meu-time {
+    max-width: 900px;
+}
+
+.conteudo-lista ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+img {
+    border-radius: 6px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.conteudo-lista li {
+    transition: 0.2s;
+}
+.menu {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+body.aluno {
+    margin: 0;
+    height: 100vh;
+
+    background:
+        radial-gradient(circle at top left, #00e1ff55 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #0066ff44 0%, transparent 30%),
+        linear-gradient(
+            135deg,
+            #0a0f1f 0%,
+            #111827 35%,
+            #132238 65%,
+            #00bfff 100%
+        );
+
+    background-attachment: fixed;
+    color: white;
+}
